@@ -3,16 +3,42 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors Game</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
+		<script src="https://kit.fontawesome.com/87468c21ce.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <h1>Rock paper Scissors</h1>
+            <h1>Rock Paper Scissors</h1>
         </header>
 
         <div class="score-board">
         <div id="user-label" class="badge">user</div>
         <div id="computer-label" class="badge">comp</div>
+		<span id="nums">
         <span id="user-score">0</span>:<span id="comp-score">0</span>
+		</span>
         </div>
+
+        <div class="result">
+            <p>Paper covers Rock. You win!</p>
+        </div>
+
+        <div class="choices">
+            <div class="choice" id="r">
+                <i class="far fa-hand-rock"></i>
+            </div>
+			<div class="choice" id="p">
+				<i class="far fa-hand-paper"></i>
+			</div>
+			<div class="choice" id="s">
+				<i class="far fa-hand-scissors"></i>
+			</div>
+        </div>
+		
+		<p id="action-message">Make your move</p>
+			
     </body>
 </html>
