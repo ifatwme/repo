@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	padding: 20px;
+	background: #00004d;
+	
+}
+
+header > h1 {
+	color: white;
+	text-align: center;
+	font-family: source code pro, monospace;
+}
+
+body {
+	background: linear-gradient(-45deg, #ffccff, #00004d, #eeccff, #550080);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.score-board {
+	margin: 20px auto;
+	border: 5px solid white;
+	border-radius: 5px;
+	text-align: center;
+	width: 20px;
+	color: white;
+	font-size: 46px;
+	padding: 30px 40px 30px 300px;
+	font-family: monospace;
+	position: relative;
+}
+
+#nums {
+	font-size: 70px;
+	padding: 40px 0 0 1000px;
+	
+}
+.badge {
+	background: #E25840;
+	color: white;
+	font-size: 30px;
+	padding:2px 0px;
+	font-family: monospace;
+}
+
+#user-label {
+	position: absolute;
+	top: 25px;
+	left: -25px;
+}
+#computer-label{
+	position: absolute;
+	right: -30px;
+	top: 25px;
+	
+}
+.result {
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+.choices {
+	margin:50px 0;
+	text-align: center;
+	height: auto;
+}
+.choice {
+	
+	sizing: 2px;
+	border: 33px solid;
+	border-color: white;
+	border-radius: 50%;
+	margin:0 15px;
+	padding: 20px;
+	display: inline-block;
+	background-color: #00004d;
+}
